@@ -28,9 +28,9 @@ export default function Detail() {
             body: message,
         })
     }
-
+    //Aqui temos uma observação - Padronizar o 55 aqui e no front ou Criar um function no font para identifcar?
     function sendWhatsapp () {
-        Linking.openURL(`whatsapp://send?phone=${incident.whatsapp}&text=${message}`);
+        Linking.openURL(`whatsapp://send?phone=55${incident.whatsapp}&text=${message}`);
     }
 
     return (
